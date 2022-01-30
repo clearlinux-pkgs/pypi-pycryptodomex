@@ -1,5 +1,5 @@
 PKG_NAME := pypi-pycryptodomex
-URL = https://files.pythonhosted.org/packages/7a/21/f399ba8dfd6e40eee444151af3237af22788b8b16077c75ec0419125f619/pycryptodomex-3.13.0.tar.gz
+URL = https://files.pythonhosted.org/packages/a6/b3/a5e59cd3ad65d4dc470a3a63381d0495885cf1ac7659c83c6bc9e9e79df6/pycryptodomex-3.14.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
