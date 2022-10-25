@@ -4,7 +4,7 @@
 #
 Name     : pypi-pycryptodomex
 Version  : 3.15.0
-Release  : 30
+Release  : 31
 URL      : https://files.pythonhosted.org/packages/52/0d/6cc95a83f6961a1ca041798d222240890af79b381e97eda3b9b538dba16f/pycryptodomex-3.15.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/52/0d/6cc95a83f6961a1ca041798d222240890af79b381e97eda3b9b538dba16f/pycryptodomex-3.15.0.tar.gz
 Summary  : Cryptographic library for Python
