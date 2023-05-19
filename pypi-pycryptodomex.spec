@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-pycryptodomex
-Version  : 3.17
-Release  : 35
-URL      : https://files.pythonhosted.org/packages/3d/07/cfd8f52b9068877801317d26dc7225e19421bc659e1395d2cd6933b1a351/pycryptodomex-3.17.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3d/07/cfd8f52b9068877801317d26dc7225e19421bc659e1395d2cd6933b1a351/pycryptodomex-3.17.tar.gz
+Version  : 3.18.0
+Release  : 36
+URL      : https://files.pythonhosted.org/packages/40/92/efd675dba957315d705f792b28d900bddc36f39252f6713961b4221ee9af/pycryptodomex-3.18.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/40/92/efd675dba957315d705f792b28d900bddc36f39252f6713961b4221ee9af/pycryptodomex-3.18.0.tar.gz
 Summary  : Cryptographic library for Python
 Group    : Development/Tools
 License  : BSD-2-Clause Python-2.0
@@ -51,10 +51,10 @@ python3 components for the pypi-pycryptodomex package.
 
 
 %prep
-%setup -q -n pycryptodomex-3.17
-cd %{_builddir}/pycryptodomex-3.17
+%setup -q -n pycryptodomex-3.18.0
+cd %{_builddir}/pycryptodomex-3.18.0
 pushd ..
-cp -a pycryptodomex-3.17 buildavx2
+cp -a pycryptodomex-3.18.0 buildavx2
 popd
 
 %build
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683045698
+export SOURCE_DATE_EPOCH=1684513919
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
