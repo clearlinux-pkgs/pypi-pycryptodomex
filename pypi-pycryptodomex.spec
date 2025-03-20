@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : pypi-pycryptodomex
-Version  : 3.21.0
-Release  : 46
-URL      : https://files.pythonhosted.org/packages/11/dc/e66551683ade663b5f07d7b3bc46434bf703491dbd22ee12d1f979ca828f/pycryptodomex-3.21.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/11/dc/e66551683ade663b5f07d7b3bc46434bf703491dbd22ee12d1f979ca828f/pycryptodomex-3.21.0.tar.gz
+Version  : 3.22.0
+Release  : 47
+URL      : https://files.pythonhosted.org/packages/ba/d5/861a7daada160fcf6b0393fb741eeb0d0910b039ad7f0cd56c39afdd4a20/pycryptodomex-3.22.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/ba/d5/861a7daada160fcf6b0393fb741eeb0d0910b039ad7f0cd56c39afdd4a20/pycryptodomex-3.22.0.tar.gz
 Summary  : Cryptographic library for Python
 Group    : Development/Tools
 License  : BSD-2-Clause Python-2.0
@@ -18,13 +18,12 @@ Requires: pypi-pycryptodomex-python = %{version}-%{release}
 Requires: pypi-pycryptodomex-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(setuptools)
-BuildRequires : pypi(sphinx)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
 
 %description
-.. image:: https://github.com/Legrandin/pycryptodome/workflows/Integration%20test/badge.svg?branch=master
+.. image:: https://github.com/Legrandin/pycryptodome/workflows/Integration%20test/badge.svg
 :target: https://github.com/Legrandin/pycryptodome/actions
 
 %package license
@@ -49,20 +48,19 @@ Summary: python3 components for the pypi-pycryptodomex package.
 Group: Default
 Requires: python3-core
 Provides: pypi(pycryptodomex)
-Requires: pypi(sphinx)
 
 %description python3
 python3 components for the pypi-pycryptodomex package.
 
 
 %prep
-%setup -q -n pycryptodomex-3.21.0
-cd %{_builddir}/pycryptodomex-3.21.0
+%setup -q -n pycryptodomex-3.22.0
+cd %{_builddir}/pycryptodomex-3.22.0
 pushd ..
-cp -a pycryptodomex-3.21.0 buildavx2
+cp -a pycryptodomex-3.22.0 buildavx2
 popd
 pushd ..
-cp -a pycryptodomex-3.21.0 buildapx
+cp -a pycryptodomex-3.22.0 buildapx
 popd
 
 %build
@@ -70,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740085047
+export SOURCE_DATE_EPOCH=1742460266
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
